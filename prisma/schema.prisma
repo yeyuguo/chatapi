@@ -30,23 +30,6 @@ model ChatGPTAccount {
   @@map("chatgpt_account")
 }
 
-model query_risk_user {
-  id        String   @id @default(uuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  // Query Date
-  date      DateTime
-  user_id   String
-  // Query Count
-  count     Int
-  // Query content
-  query     String
-  // Language
-  language  String
-
-  @@index([date, user_id, language])
-}
-
 model ChatGPTConversation {
   id             String   @id @default(cuid())
   createdAt      DateTime @default(now())
