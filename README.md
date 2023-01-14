@@ -26,7 +26,7 @@ npm install
 
 ### Config  
 
-1. Copy env.example to .env. **CAPTCHA_TOKEN** is required
+1. Copy .env.example to .env. **CAPTCHA_TOKEN** is required
 
     ```sh
     cp env.example .env
