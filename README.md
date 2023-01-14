@@ -29,7 +29,7 @@ npm install
 1. Copy env.example to .env. **CAPTCHA_TOKEN** is required
 
     ```sh
-    cp env.example .env
+    cp .env.example .env
     ```
 
 2. Create account.json  
@@ -52,6 +52,7 @@ npm install
 4. Seed Database
 
     ```sh
+    npx prisma migrate dev --name init
     npm run seed
     ```
 
